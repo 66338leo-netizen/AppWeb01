@@ -2,9 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app= Flask(__name__)
 
-@app.route('/home')
+@app.route('/')
 def index():
-    return render_template('index.html', titulo='Flask',mensaje='Bienvenido a mi sitio web')
+    return render_template('index.html', titulo='UDL - ICO',mensaje='Bienvenido a mi sitio web')
 
 @app.route('/servicios')
 def servicio():
